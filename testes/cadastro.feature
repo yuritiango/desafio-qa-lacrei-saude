@@ -37,21 +37,7 @@ Feature: Cadastro de usuario
     ENTÃO o sistema permite o cadastro com sucesso
     E exibe a mensagem "Estamos quase lá"
 
-  Scenario: CT-07 Pos Cadastro com campos obrigatorios vazios
-    DADO que estou no pós-cadastro
-    QUANDO eu não seleciono nenhuma opção
-    E clico em "Próximo"
-    ENTÃO o sistema não avança
-    E exibe a mensagem "Por favor, selecione uma das opções disponíveis."
-
-  Scenario: CT-08 Pos Cadastro com campos obrigatorios preenchidos
-    DADO que estou no pós-cadastro
-    QUANDO eu seleciono uma opção em cada pergunta
-    E clico em "Próximo"
-    ENTÃO o sistema carrega a página
-    E exibe a mensagem "Seu cadastro foi concluído!"
-
-  Scenario: CT-09 Cadastro com campos de nome vazios
+  Scenario: CT-07 Cadastro com campos de nome vazios
     DADO que estou na tela de cadastro
     QUANDO eu não preencho o campo "Nome civil ou social"
     E não preencho o campo "Sobrenome"
@@ -59,10 +45,24 @@ Feature: Cadastro de usuario
     ENTÃO o sistema não permite o envio
     E exibe a mensagem "Este campo é obrigatório"
 
-  Scenario: CT-10 Cadastro com nome social preenchido
+  Scenario: CT-08 Cadastro com nome social preenchido
     DADO que estou na tela de cadastro
     QUANDO eu preencho o campo "Nome civil ou social" com um nome social
     E preencho todos os outros campos corretamente
     E clico em "Cadastrar"
     ENTÃO o sistema aceita o nome social
     E permite o cadastro com sucesso
+
+  Scenario: CT-09 Pos Cadastro com campos obrigatorios vazios
+    DADO que estou no pós-cadastro
+    QUANDO eu não seleciono nenhuma opção
+    E clico em "Próximo"
+    ENTÃO o sistema não avança
+    E exibe a mensagem "Por favor, selecione uma das opções disponíveis."
+
+  Scenario: CT-10 Pos Cadastro com campos obrigatorios preenchidos
+    DADO que estou no pós-cadastro
+    QUANDO eu seleciono uma opção em cada pergunta
+    E clico em "Próximo"
+    ENTÃO o sistema carrega a página
+    E exibe a mensagem "Seu cadastro foi concluído!"
