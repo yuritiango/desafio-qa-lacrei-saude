@@ -1,43 +1,43 @@
 Feature: Cadastro de usuario
 
-  Scenario: CT-01 Campos obrigatorios vazios
+  # CT-01 Cenário: Campos obrigatórios vazios
     DADO que estou na tela de cadastro
     QUANDO eu clico em "Entrar" sem preencher nada
     ENTÃO o sistema não permite o envio
     E exibe mensagens de erro nos campos obrigatórios
 
-  Scenario: CT-02 Cadastro com email invalido
+  # CT-02 Cenário: Cadastro com email inválido
     DADO que estou na tela de cadastro
     QUANDO eu escrevo um email num formato inválido
     ENTÃO o sistema não permite o envio
     E exibe uma mensagem de formato inválido
 
-  Scenario: CT-03 Cadastro com emails que nao correspondem
+  # CT-03 Cenário: Cadastro com emails que não correspondem
     DADO que eu estou na tela de cadastro
     QUANDO eu preencho o email com "yuritiango.qa@gmail.com"
     E preencho o confirmar email com "yuritiangoh@gmail.com"
     ENTÃO o sistema não permite o envio
     E exibe a mensagem "Os e-mails não correspondem, digite novamente"
 
-  Scenario: CT-04 Cadastro com senha fraca
+  # CT-04 Cenário: Cadastro com senha fraca
     DADO que estou na tela de cadastro
     QUANDO eu preencho a senha com "123"
     ENTÃO o sistema não permite o envio do formulário
     E exibe a mensagem "A senha deve conter, no mínimo: 8 Caracteres ou mais"
 
-  Scenario: CT-05 Cadastro com email ja existente
+  # CT-05 Cenário: Cadastro com email já existente
     DADO que estou na tela de cadastro
     QUANDO eu preencho o email com um endereço já cadastrado
     ENTÃO o sistema não permite o envio
     E exibe a mensagem "Já existe um usuário cadastrado com este endereço de e-mail."
 
-  Scenario: CT-06 Cadastro com dados validos
+  # CT-06 Cenário: Cadastro com dados válidos
     DADO que estou na tela de cadastro
     QUANDO eu preencho todos os campos corretamente
     ENTÃO o sistema permite o cadastro com sucesso
     E exibe a mensagem "Estamos quase lá"
 
-  Scenario: CT-07 Cadastro com campos de nome vazios
+  # CT-07 Cenário: Cadastro com campos de nome vazios
     DADO que estou na tela de cadastro
     QUANDO eu não preencho o campo "Nome civil ou social"
     E não preencho o campo "Sobrenome"
@@ -45,7 +45,7 @@ Feature: Cadastro de usuario
     ENTÃO o sistema não permite o envio
     E exibe a mensagem "Este campo é obrigatório"
 
-  Scenario: CT-08 Cadastro com nome social preenchido
+  # CT-08 Cenário: Cadastro com nome social preenchido
     DADO que estou na tela de cadastro
     QUANDO eu preencho o campo "Nome civil ou social" com um nome social
     E preencho todos os outros campos corretamente
@@ -53,14 +53,14 @@ Feature: Cadastro de usuario
     ENTÃO o sistema aceita o nome social
     E permite o cadastro com sucesso
 
-  Scenario: CT-09 Pos Cadastro com campos obrigatorios vazios
+  # CT-09 Cenário: Pós Cadastro com campos obrigatórios vazios
     DADO que estou no pós-cadastro
     QUANDO eu não seleciono nenhuma opção
     E clico em "Próximo"
     ENTÃO o sistema não avança
     E exibe a mensagem "Por favor, selecione uma das opções disponíveis."
 
-  Scenario: CT-10 Pos Cadastro com campos obrigatorios preenchidos
+  # CT-10 Cenário: Pós Cadastro com campos obrigatórios preenchidos
     DADO que estou no pós-cadastro
     QUANDO eu seleciono uma opção em cada pergunta
     E clico em "Próximo"
