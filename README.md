@@ -27,7 +27,7 @@ Documentação dos testes realizados na plataforma Lacrei Saúde como parte do p
 4. Documente bugs encontrados com print e passos
 
 ### Testes Automatizados
-(a preencher após configuração do Cypress)
+npx cypress run --spec "cypress/e2e/cadastro.feature"
 
 ---
 
