@@ -1,5 +1,5 @@
-describe('Senha Fraca', () => {
-  it('Não deve permitir cadastro com senha fraca', () => {
+describe('Cadastro com emails que não correspondem', () => {
+  it('Não deve permitir cadastro com emails que não correspondem', () => {
     cy.visit('https://paciente-staging.lacreisaude.com.br/saude/paciente/cadastrar/')
     cy.get('[name="firstName"]').click().type('Yuri')
     cy.get('[name="lastName"]').click().type('Tiango')
