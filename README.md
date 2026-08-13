@@ -162,7 +162,7 @@ Os testes automatizados foram desenvolvidos utilizando:
 * **Cypress**
 * **JavaScript**
 
-### Cenários automatizados
+## Cenários automatizados
 
 * Cadastro válido
 * Cadastro inválido
