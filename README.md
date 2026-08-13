@@ -3,6 +3,7 @@
 Projeto desenvolvido como parte de um desafio técnico de QA.
 
 **Candidato:** Yuri Tiango
+
 **Ambiente de testes:** paciente-staging.lacreisaude.com.br
 
 ---
