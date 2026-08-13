@@ -201,19 +201,6 @@ Cenários de menor prioridade, como edição de perfil, não foram incluídos no
 
 ---
 
-## 📂 Estrutura do projeto
-
-```text
-desafio-qa-lacrei-saude/
-├── cypress/
-│   ├── e2e/
-│   ├── support/
-│   └── videos/
-├── README.md
-└── package.json
-```
-
----
 
 ## 📎 Documentação e evidências
 
