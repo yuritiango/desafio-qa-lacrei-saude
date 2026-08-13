@@ -1,6 +1,6 @@
 # Desafio QA — Lacrei Saúde
 
-Projeto desenvolvido como parte de um desafio técnico de QA, com o objetivo de avaliar a qualidade da aplicação da Lacrei Saúde por meio de testes funcionais, acessibilidade, responsividade, performance e automação.
+Projeto desenvolvido como parte de um desafio técnico de QA.
 
 **Candidato:** Yuri Tiango
 **Ambiente de testes:** paciente-staging.lacreisaude.com.br
